@@ -1,6 +1,7 @@
 # QPlayer
 
-简单的本地音乐播放器，基于 Qt6 和 QML。
+一个用 Qt6 + QML 写的本地音乐播放器，支持常见音频格式，带专辑封面和波形（模拟）可视化。
+
 
 ## 功能
 
@@ -33,6 +34,21 @@ cmake --build build
 
 - C++17 / Qt6 / QML
 - CMake 3.20+
+
+## 结构
+
+```
+├── CMakeLists.txt
+├── Main.qml                  # 主界面
+├── main.cpp                  # 入口
+├── backend/
+│   ├── PlayerController.h
+│   ├── PlayerController.cpp  # 播放控制后端
+│   └── MusicInfo.h           # 歌曲信息结构
+└── assets/
+    ├── icons/                # 应用图标
+    └── img.png               # 截图
+```
 
 ## License
 
